@@ -5,6 +5,7 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="styles/style.css">
 	<title>Document</title>
 </head>
 
@@ -12,40 +13,48 @@
 	<!-- ! Хедер -->
 	<header class="page-header">
 		<h1 class="visually-hidden">Интернет-магазин tovaradar</h1>
-		<img src="" alt="" width="187" height="71" class="header-logo">
-		<a class="header-adress" href="#">Москва, Московская область</a>
-
-		<a href="#" class="header-catalog">Каталог</a>
-		<div class="header-search">
-			<input type="search" placeholder="Я ищу...">
-			<img src="" width="19" height="19" alt="кнопка поиск">
-		</div>
-		<ul class="header-list">
-			<li class="header-item">
-				<a href="#">
-					<img class="header-image" src="" width="26" height="26" alt="кнопка войти в аккаунт"></img>
-					<p>Войти</p>
-				</a>
-			</li>
-			<li class="header-item">
-				<a href="#">
-					<img class="header-image" src="" width="24" height="24" alt="кнопка заказы"></img>
-					<p>Заказы</p>
-				</a>
-			</li>
-			<li class="header-item">
-				<a href="#">
-					<img class="header-image" src="" width="23" height="20" alt="кнопка избранные"></img>
-					<p>Избранные</p>
-				</a>
-			</li>
-			<li class="header-item">
-				<a href="#">
-					<img class="header-image" src="" width="26" height="26" alt="кнопка корзина"></img>
-					<p>Корзина</p>
-				</a>
-			</li>
-		</ul>
+		<img src="images/header/logo.png" alt="" width="187" height="71" class="header-logo">
+		<a class="header-adress" href="#">
+			<img src="images/header/icon.svg" width="15" height="15" alt="указатель карты">
+			<p>Москва, Московская область</p>
+		</a>
+		<nav class="page-navigation">
+			<a href="#" class="header-catalog">Каталог</a>
+			<div class="header-search">
+				<input type="search" placeholder="Я ищу...">
+				<img src="images/header/search.svg" width="19" height="19" alt="кнопка поиск">
+			</div>
+			<ul class="header-list">
+				<li class="header-item">
+					<a href="#">
+						<img class="header-image" src="images/header/user.svg" width="26" height="26"
+							alt="кнопка войти в аккаунт"></img>
+						<p>Войти</p>
+					</a>
+				</li>
+				<li class="header-item">
+					<a href="#">
+						<img class="header-image" src="images/header/cart.svg" width="26" height="26"
+							alt="кнопка заказы"></img>
+						<p>Заказы</p>
+					</a>
+				</li>
+				<li class="header-item">
+					<a href="#">
+						<img class="header-image" src="images/header/like.svg" width="26" height="26"
+							alt="кнопка избранные"></img>
+						<p>Избранные</p>
+					</a>
+				</li>
+				<li class="header-item">
+					<a href="#">
+						<img class="header-image" src="images/header/basket.svg" width="26" height="26"
+							alt="кнопка корзина"></img>
+						<p>Корзина</p>
+					</a>
+				</li>
+			</ul>
+		</nav>
 	</header>
 
 	<main class="page-main">
@@ -54,13 +63,14 @@
 			<h2 class="visually-hidden">Акции</h2>
 			<div class="promo-slide">
 				<a href="#">
+					<img src="images/promo/super-price.jpg" width="1320" height="400"
+						alt="Акция Суперцены недели - каждую неделю новые товары"></img>
+				</a>
+				<a class="visually-hidden" href="#">
 					<img src="" width="1320" height="400" alt=""></img>
 				</a>
 				<a class="visually-hidden" href="#">
-					<img src="" alt="" width="1320" height="400"></img>
-				</a>
-				<a class="visually-hidden" href="#">
-					<img src="" alt="" width="1320" height="400"></img>
+					<img src="" width="1320" height="400" alt=""></img>
 				</a>
 			</div>
 		</section>
@@ -71,451 +81,497 @@
 			<!-- Лучшие 4 категории -->
 			<div class="category-item top-category-item">
 				<a href="">
-					<img src="" alt="Электроника">
+					<img src="images/categories/gadgets.jpg" width="250" height="206" alt="Электроника">
 					<p>Электроника</p>
 				</a>
 			</div>
 			<div class="category-item top-category-item">
 				<a href="">
-					<img src="" alt="Быловые товары">
+					<img src="images/categories/appliances.jpg" width="250" height="206" alt="Бытовые товары">
 					<p>Бытовые товары</p>
 				</a>
 			</div>
 			<div class="category-item top-category-item">
 				<a href="">
-					<img src="" alt="Книги, хобби, канцелярия">
+					<img src="images/categories/books.jpg" width="250" height="206" alt="Книги, хобби, канцелярия">
 					<p>Книги, хобби, канцелярия</p>
 				</a>
 			</div>
 			<div class="category-item top-category-item">
 				<a href="">
-					<img src="" alt="Продукты питания">
+					<img src="images/categories/products.jpg" width="250" height="206" alt="Продукты питания">
 					<p>Продукты питания</p>
 				</a>
 			</div>
 			<!-- Остальные категории -->
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Детские товары">
+					<img src="images/categories/toys.jpg" width="119" height="105" alt="Детские товары">
 					<p>Детские товары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Детские товары">
+					<img src="images/categories/clothers.jpg" width="119" height="105" alt="Детские товары">
 					<p>Детские товары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Детские товары">
+					<img src="images/categories/for-pets.jpg" width="119" height="105" alt="Детские товары">
 					<p>Детские товары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Детские товары">
+					<img src="images/categories/cosmetics.jpg" width="119" height="105" alt="Детские товары">
 					<p>Детские товары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Детские товары">
+					<img src="images/categories/garden.jpg" width="119" height="105" alt="Детские товары">
 					<p>Детские товары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Детские товары">
+					<img src="images/categories/sport.jpg" width="119" height="105" alt="Детские товары">
 					<p>Детские товары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Одежда, обувь и аксессуары">
+					<img src="images/categories/kitchen.jpg" width="119" height="105" alt="Одежда, обувь и аксессуары">
 					<p>Одежда, обувь и аксессуары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Одежда, обувь и аксессуары">
+					<img src="images/categories/furniture.jpg" width="119" height="105"
+						alt="Одежда, обувь и аксессуары">
 					<p>Одежда, обувь и аксессуары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Одежда, обувь и аксессуары">
+					<img src="images/categories/auto.jpg" width="119" height="105" alt="Одежда, обувь и аксессуары">
 					<p>Одежда, обувь и аксессуары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Одежда, обувь и аксессуары">
+					<img src="images/categories/medcial.jpg" width="119" height="105" alt="Одежда, обувь и аксессуары">
 					<p>Одежда, обувь и аксессуары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Одежда, обувь и аксессуары">
+					<img src="images/categories/build.jpg" width="119" height="105" alt="Одежда, обувь и аксессуары">
 					<p>Одежда, обувь и аксессуары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Одежда, обувь и аксессуары">
+					<img src="images/categories/for-adults.jpg" width="119" height="105"
+						alt="Одежда, обувь и аксессуары">
 					<p>Одежда, обувь и аксессуары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Зоотовары">
+					<img src="images/categories/garden.jpg" width="119" height="105" alt="Зоотовары">
 					<p>Зоотовары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Зоотовары">
+					<img src="images/categories/sport.jpg" width="119" height="105" alt="Зоотовары">
 					<p>Зоотовары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Зоотовары">
+					<img src="images/categories/kitchen.jpg" width="119" height="105" alt="Зоотовары">
 					<p>Зоотовары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Зоотовары">
+					<img src="images/categories/furniture.jpg" width="119" height="105" alt="Зоотовары">
 					<p>Зоотовары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Зоотовары">
+					<img src="images/categories/for-pets.jpg" width="119" height="105" alt="Зоотовары">
 					<p>Зоотовары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Зоотовары">
+					<img src="images/categories/books.jpg" width="119" height="105" alt="Зоотовары">
 					<p>Зоотовары</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Красота и уход">
+					<img src="images/categories/appliances.jpg" width="119" height="105" alt="Красота и уход">
 					<p>Красота и уход</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Красота и уход">
+					<img src="images/categories/auto.jpg" width="119" height="105" alt="Красота и уход">
 					<p>Красота и уход</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Красота и уход">
+					<img src="images/categories/clothers.jpg" width="119" height="105" alt="Красота и уход">
 					<p>Красота и уход</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Красота и уход">
+					<img src="images/categories/cosmetics.jpg" width="119" height="105" alt="Красота и уход">
 					<p>Красота и уход</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Красота и уход">
+					<img src="images/categories/cleaner.png" width="119" height="105" alt="Красота и уход">
 					<p>Красота и уход</p>
 				</a>
 			</div>
 			<div class="category-item">
 				<a href="">
-					<img src="" alt="Красота и уход">
+					<img src="images/categories/build.jpg" width="119" height="105" alt="Красота и уход">
 					<p>Красота и уход</p>
 				</a>
 			</div>
 		</section>
 
 		<!--! Популярные товары -->
-		<section class="top-goods">
+		<section class="top-goods section">
 			<h2>Популярная компьютерная техника</h2>
 			<!-- Карточки товаров -->
-			<div class="top-goods-item">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/headphones.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
-				<img src="" alt="Добавить в избранное">
-				<img src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/laptop.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Умная колонка Яндекс 
-				Станция Мини">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/yandex-station.png" width="225" height="164"
+					alt="Умная колонка Яндекс Станция Мини">
 				<b>от 3000 ₽</b>
-				<p>Умная колонка Яндекс
-					Станция Мини</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Умная колонка Яндекс Станция Мини</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Робот-пылесос Xiaomi 
-				Mi Robot">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/vacuum-cleaner.png" width="225" height="164" alt="Робот-пылесос Xiaomi Mi Robot">
 				<b>от 3000 ₽</b>
-				<p>Робот-пылесос Xiaomi
-					Mi Robot</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Робот-пылесос Xiaomi Mi Robot</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Зеркальный фотоаппарат 
-				Canon EOS 6D Body">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/photo-camera.png" width="225" height="164"
+					alt="Зеркальный фотоаппарат Canon EOS 6D Body">
 				<b>от 3000 ₽</b>
-				<p>Зеркальный фотоаппарат
-					Canon EOS 6D Body</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Зеркальный фотоаппарат Canon EOS 6D Body</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/headphones.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
-				<img src="" alt="Добавить в избранное">
-				<img src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/laptop.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Умная колонка Яндекс 
-				Станция Мини">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/yandex-station.png" width="225" height="164"
+					alt="Умная колонка Яндекс Станция Мини">
 				<b>от 3000 ₽</b>
-				<p>Умная колонка Яндекс
-					Станция Мини</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Умная колонка Яндекс Станция Мини</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Робот-пылесос Xiaomi 
-				Mi Robot">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/vacuum-cleaner.png" width="225" height="164" alt="Робот-пылесос Xiaomi Mi Robot">
 				<b>от 3000 ₽</b>
-				<p>Робот-пылесос Xiaomi
-					Mi Robot</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Робот-пылесос Xiaomi Mi Robot</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item">
-				<img src="" alt="Зеркальный фотоаппарат 
-				Canon EOS 6D Body">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="top-goods-item card">
+				<img src="images/cards/photo-camera.png" width="225" height="164"
+					alt="Зеркальный фотоаппарат Canon EOS 6D Body">
 				<b>от 3000 ₽</b>
-				<p>Зеркальный фотоаппарат
-					Canon EOS 6D Body</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Зеркальный фотоаппарат Canon EOS 6D Body</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-more">
-				<p>Показать еще</p>
+			<div class="top-goods-more card-more">
+				<a href="">Показать еще</a>
 			</div>
 		</section>
 
-		<section class="on-vision">
+		<!-- ! Маленький Промо-слайдер -->
+		<section class="slider-small">
+			<h2 class="visually-hidden">Акции</h2>
+			<div class="promo-slide-small">
+				<a href="#">
+					<img src="images/promo/house-of-dream.jpg" width="1220" height="240"
+						alt="Акция Дом вашей мечты, всё для уютного интерьера"></img>
+				</a>
+				<a class="visually-hidden" href="#">
+					<img src="" width="1320" height="400" alt="Акция 2"></img>
+				</a>
+				<a class="visually-hidden" href="#">
+					<img src="" width="1320" height="400" alt="Акция 3"></img>
+				</a>
+			</div>
+		</section>
+
+		<!-- ! Хит продаж -->
+		<section class="hit-goods section">
+			<h2>Популярная компьютерная техника</h2>
+			<!-- Карточки товаров -->
+			<div class="hit-goods-item card">
+				<img src="images/cards/headphones.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
+				<b>от 3000 ₽</b>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/laptop.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
+				<b>от 3000 ₽</b>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/yandex-station.png" width="225" height="164"
+					alt="Умная колонка Яндекс Станция Мини">
+				<b>от 3000 ₽</b>
+				<h3>Умная колонка Яндекс Станция Мини</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/vacuum-cleaner.png" width="225" height="164" alt="Робот-пылесос Xiaomi Mi Robot">
+				<b>от 3000 ₽</b>
+				<h3>Робот-пылесос Xiaomi Mi Robot</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/photo-camera.png" width="225" height="164"
+					alt="Зеркальный фотоаппарат Canon EOS 6D Body">
+				<b>от 3000 ₽</b>
+				<h3>Зеркальный фотоаппарат Canon EOS 6D Body</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/headphones.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
+				<b>от 3000 ₽</b>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/laptop.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
+				<b>от 3000 ₽</b>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/yandex-station.png" width="225" height="164"
+					alt="Умная колонка Яндекс Станция Мини">
+				<b>от 3000 ₽</b>
+				<h3>Умная колонка Яндекс Станция Мини</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/vacuum-cleaner.png" width="225" height="164" alt="Робот-пылесос Xiaomi Mi Robot">
+				<b>от 3000 ₽</b>
+				<h3>Робот-пылесос Xiaomi Mi Robot</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-item card">
+				<img src="images/cards/photo-camera.png" width="225" height="164"
+					alt="Зеркальный фотоаппарат Canon EOS 6D Body">
+				<b>от 3000 ₽</b>
+				<h3>Зеркальный фотоаппарат Canon EOS 6D Body</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
+			</div>
+			<div class="hit-goods-more card-more">
+				<a href="">Показать еще</a>
+			</div>
+		</section>
+
+		<section class="on-vision section">
 			<!--! На основе просморов -->
 			<h2>На основе просморов</h2>
 			<!-- Карточки товаров -->
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/headphones.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
-				<img src="" alt="Добавить в избранное">
-				<img src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/laptop.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Умная колонка Яндекс 
-				Станция Мини">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/yandex-station.png" width="225" height="164"
+					alt="Умная колонка Яндекс Станция Мини">
 				<b>от 3000 ₽</b>
-				<p>Умная колонка Яндекс
-					Станция Мини</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Умная колонка Яндекс Станция Мини</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Робот-пылесос Xiaomi 
-				Mi Robot">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/vacuum-cleaner.png" width="225" height="164" alt="Робот-пылесос Xiaomi Mi Robot">
 				<b>от 3000 ₽</b>
-				<p>Робот-пылесос Xiaomi
-					Mi Robot</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Робот-пылесос Xiaomi Mi Robot</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Зеркальный фотоаппарат 
-				Canon EOS 6D Body">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/photo-camera.png" width="225" height="164"
+					alt="Зеркальный фотоаппарат Canon EOS 6D Body">
 				<b>от 3000 ₽</b>
-				<p>Зеркальный фотоаппарат
-					Canon EOS 6D Body</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Зеркальный фотоаппарат Canon EOS 6D Body</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/headphones.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
-				<img src="" alt="Добавить в избранное">
-				<img src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/laptop.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Умная колонка Яндекс 
-				Станция Мини">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/yandex-station.png" width="225" height="164"
+					alt="Умная колонка Яндекс Станция Мини">
 				<b>от 3000 ₽</b>
-				<p>Умная колонка Яндекс
-					Станция Мини</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Умная колонка Яндекс Станция Мини</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Робот-пылесос Xiaomi 
-				Mi Robot">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/vacuum-cleaner.png" width="225" height="164" alt="Робот-пылесос Xiaomi Mi Robot">
 				<b>от 3000 ₽</b>
-				<p>Робот-пылесос Xiaomi
-					Mi Robot</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Робот-пылесос Xiaomi Mi Robot</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item on-vision">
-				<img src="" alt="Зеркальный фотоаппарат 
-				Canon EOS 6D Body">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="on-vision-item card">
+				<img src="images/cards/photo-camera.png" width="225" height="164"
+					alt="Зеркальный фотоаппарат Canon EOS 6D Body">
 				<b>от 3000 ₽</b>
-				<p>Зеркальный фотоаппарат
-					Canon EOS 6D Body</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Зеркальный фотоаппарат Canon EOS 6D Body</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-more on-vision">
-				<p>Показать еще</p>
+			<div class="on-vision-item card-more">
+				<a href="">Показать еще</a>
 			</div>
 		</section>
 
 		<!--! От спонсора -->
-		<section class="top-goods-item from-sponsor">
+		<section class="from-sponsor section">
 			<h2>Спонсорские товары</h2>
 			<!-- Карточки товаров -->
-			<div class="top-goods-item from-sponsor">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="from-sponsor-item card">
+				<img src="images/cards/headphones.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item from-sponsor">
-				<img src="" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
-				<img src="" alt="Добавить в избранное">
-				<img src="" alt="Новинка">
+			<div class="from-sponsor-item card">
+				<img src="images/cards/laptop.png" width="225" height="164"
+					alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
 				<b>от 3000 ₽</b>
-				<p>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item from-sponsor">
-				<img src="" alt="Умная колонка Яндекс 
-				Станция Мини">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="from-sponsor-item card">
+				<img src="images/cards/yandex-station.png" width="225" height="164"
+					alt="Умная колонка Яндекс Станция Мини">
 				<b>от 3000 ₽</b>
-				<p>Умная колонка Яндекс
-					Станция Мини</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Умная колонка Яндекс Станция Мини</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item from-sponsor">
-				<img src="" alt="Робот-пылесос Xiaomi 
-				Mi Robot">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="from-sponsor-item card">
+				<img src="images/cards/vacuum-cleaner.png" width="225" height="164" alt="Робот-пылесос Xiaomi Mi Robot">
 				<b>от 3000 ₽</b>
-				<p>Робот-пылесос Xiaomi
-					Mi Robot</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Робот-пылесос Xiaomi Mi Robot</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
-			<div class="top-goods-item from-sponsor">
-				<img src="" alt="Зеркальный фотоаппарат 
-				Canon EOS 6D Body">
-				<img src="" alt="Добавить в избранное">
-				<img class="visually-hidden" src="" alt="Новинка">
+			<div class="from-sponsor-item card">
+				<img src="images/cards/photo-camera.png" width="225" height="164"
+					alt="Зеркальный фотоаппарат Canon EOS 6D Body">
 				<b>от 3000 ₽</b>
-				<p>Зеркальный фотоаппарат
-					Canon EOS 6D Body</p>
-				<a href="#">26 предложений</a>
-				<a href="#">Купить</a>
+				<h3>Зеркальный фотоаппарат Canon EOS 6D Body</h3>
+				<p>26 предложений</p>
+				<a class="btn-buy" href="#">Купить</a>
 			</div>
 		</section>
 
@@ -524,82 +580,82 @@
 			<h2>Представительные бренды</h2>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Sber">
+					<img src="images/brands/sber.jpg" width="187" height="100" alt="Sber">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Dyson">
+					<img src="images/brands/dysun.jpg" width="187" height="100" alt="Dyson">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Whiskas">
+					<img src="images/brands/whiskas.jpg" width="187" height="100" alt="Whiskas">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Xiaomi">
+					<img src="images/brands/xiaomi.jpg" width="187" height="100" alt="Xiaomi">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Салют ТВ">
+					<img src="images/brands/salut-tv.jpg" width="187" height="100" alt="Салют ТВ">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Hi">
+					<img src="images/brands/hi.jpg" width="187" height="100" alt="Hi">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Makita">
+					<img src="images/brands/makita.jpg" width="187" height="100" alt="Makita">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Richard">
+					<img src="images/brands/richard.jpg" width="187" height="100" alt="Richard">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Lego">
+					<img src="images/brands/lego.jpg" width="187" height="100" alt="Lego">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Ornelio">
+					<img src="images/brands/ornelo.jpg" width="187" height="100" alt="Ornelio">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Samsung">
+					<img src="images/brands/samsung.jpg" width="187" height="100" alt="Samsung">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Apple">
+					<img src="images/brands/apple.jpg" width="187" height="100" alt="Apple">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Dekraft">
+					<img src="images/brands/dekraft.jpg" width="187" height="100" alt="Dekraft">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Nutrilac">
+					<img src="images/brands/nutrilak.jpg" width="187" height="100" alt="Nutrilac">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Coffesso">
+					<img src="images/brands/coffesso.jpg" width="187" height="100" alt="Coffesso">
 				</a>
 			</div>
 			<div class="brands-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Остальные производители">
+					<div>Остальные производители</div>
 				</a>
 			</div>
 		</section>
@@ -609,92 +665,92 @@
 			<h2>Территория магазинов</h2>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="DeLonghi">
+					<img src="images/territory/delonghi.jpg" width="187" height="100" alt="DeLonghi">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="YokoSun">
+					<img src="images/territory/yokosun.jpg" width="187" height="100" alt="YokoSun">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Эвалар">
+					<img src="images/territory/evalar.jpg" width="187" height="100" alt="Эвалар">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Lamobile">
+					<img src="images/territory/lamobile.jpg" width="187" height="100" alt="Lamobile">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Synergitic">
+					<img src="images/territory/synergetic.jpg" width="187" height="100" alt="Synergitic">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Tefal">
+					<img src="images/territory/tefal.jpg" width="187" height="100" alt="Tefal">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Ledvance">
+					<img src="images/territory/ledvance.jpg" width="187" height="100" alt="Ledvance">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Alltime">
+					<img src="images/territory/alltime.jpg" width="187" height="100" alt="Alltime">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="HP">
+					<img src="images/territory/hp.jpg" width="187" height="100" alt="HP">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Braun">
+					<img src="images/territory/braun.jpg" width="187" height="100" alt="Braun">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Kitfort">
+					<img src="images/territory/kitfort.jpg" width="187" height="100" alt="Kitfort">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Kuppersberg">
+					<img src="images/territory/kuppersberg.jpg" width="187" height="100" alt="Kuppersberg">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Agora">
+					<img src="images/territory/acora.jpg" width="187" height="100" alt="Agora">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Эльдорадо">
+					<img src="images/territory/eldorado.jpg" width="187" height="100" alt="Эльдорадо">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="М.Видео">
+					<img src="images/territory/mvideo.jpg" width="187" height="100" alt="М.Видео">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Weissgauff">
+					<img src="images/territory/weissgauff.jpg" width="187" height="100" alt="Weissgauff">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Sber">
+					<img src="images/territory/sber.jpg" width="187" height="100" alt="Sber">
 				</a>
 			</div>
 			<div class="territory-item">
 				<a href="#">
-					<img src="" width="187" height="100" alt="Все продавцы">
+					<div>Все продавцы</div>
 				</a>
 			</div>
 		</section>
@@ -703,134 +759,173 @@
 		<section class="viewed">
 			<h2>Вы просматривали</h2>
 			<div class="viewed-item">
-				<a href="">
-					<img src="" width="228" height="163" alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
-					<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
-						управление: при помощи переключателей на корпусе регулируются скорость и температурный режим.
-						Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту – 264
-						см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели прорезинена и
-						удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
-						специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
-						специальным шарниром у крепления для защиты от механических повреждений. Возможность вращения
-						провода предотвращает его от запутывания.</p>
-					<h3>Основные функциональные характеристики:</h3>
-					<ul>
-						<li>наличие 2 степеней нагрева;</li>
-						<li>2 скорости работы воздушного потока;</li>
-						<li>возможность вращения насадок;</li>
-						<li>встроенный режим "холодный воздух";</li>
-						<li>наличие съемной защитной решетки.</li>
-						<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
-							распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.</li>
-					</ul>
-					<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
-						Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
-						начинаются от 4499 рублей</b>
+				<a href="#">
+					<img src="images/cards/headphones.png" width="228" height="163"
+						alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver">
+					<div>
+						<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
+							управление: при помощи переключателей на корпусе регулируются скорость и температурный
+							режим.
+							Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту –
+							264
+							см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели
+							прорезинена и
+							удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
+							специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
+							специальным шарниром у крепления для защиты от механических повреждений. Возможность
+							вращения
+							провода предотвращает его от запутывания.</p>
+						<h3>Основные функциональные характеристики:</h3>
+						<ul>
+							<li>наличие 2 степеней нагрева;</li>
+							<li>2 скорости работы воздушного потока;</li>
+							<li>возможность вращения насадок;</li>
+							<li>встроенный режим "холодный воздух";</li>
+							<li>наличие съемной защитной решетки.</li>
+							<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
+								распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.
+							</li>
+						</ul>
+						<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
+							Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
+							начинаются от 4499 рублей</b>
+					</div>
 				</a>
 			</div>
 			<div class="viewed-item">
 				<a href="">
-					<img src="" width="228" height="163" alt="Зеркальный фотоаппарат Canon EOS 6D Body">
-					<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
-						управление: при помощи переключателей на корпусе регулируются скорость и температурный режим.
-						Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту – 264
-						см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели прорезинена и
-						удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
-						специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
-						специальным шарниром у крепления для защиты от механических повреждений. Возможность вращения
-						провода предотвращает его от запутывания.</p>
-					<h3>Основные функциональные характеристики:</h3>
-					<ul>
-						<li>наличие 2 степеней нагрева;</li>
-						<li>2 скорости работы воздушного потока;</li>
-						<li>возможность вращения насадок;</li>
-						<li>встроенный режим "холодный воздух";</li>
-						<li>наличие съемной защитной решетки.</li>
-						<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
-							распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.</li>
-					</ul>
-					<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
-						Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
-						начинаются от 4499 рублей</b>
+					<img src="images/cards/photo-camera.png" width="228" height="163"
+						alt="Зеркальный фотоаппарат Canon EOS 6D Body">
+					<div class="visually-hidden">
+						<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
+							управление: при помощи переключателей на корпусе регулируются скорость и температурный
+							режим.
+							Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту –
+							264
+							см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели
+							прорезинена и
+							удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
+							специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
+							специальным шарниром у крепления для защиты от механических повреждений. Возможность
+							вращения
+							провода предотвращает его от запутывания.</p>
+						<h3>Основные функциональные характеристики:</h3>
+						<ul>
+							<li>наличие 2 степеней нагрева;</li>
+							<li>2 скорости работы воздушного потока;</li>
+							<li>возможность вращения насадок;</li>
+							<li>встроенный режим "холодный воздух";</li>
+							<li>наличие съемной защитной решетки.</li>
+							<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
+								распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.
+							</li>
+						</ul>
+						<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
+							Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
+							начинаются от 4499 рублей</b>
+					</div>
 				</a>
 			</div>
 			<div class="viewed-item">
 				<a href="">
-					<img src="" width="228" height="163" alt="Робот-пылесос Xiaomi Mi Robot">
-					<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
-						управление: при помощи переключателей на корпусе регулируются скорость и температурный режим.
-						Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту – 264
-						см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели прорезинена и
-						удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
-						специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
-						специальным шарниром у крепления для защиты от механических повреждений. Возможность вращения
-						провода предотвращает его от запутывания.</p>
-					<h3>Основные функциональные характеристики:</h3>
-					<ul>
-						<li>наличие 2 степеней нагрева;</li>
-						<li>2 скорости работы воздушного потока;</li>
-						<li>возможность вращения насадок;</li>
-						<li>встроенный режим "холодный воздух";</li>
-						<li>наличие съемной защитной решетки.</li>
-						<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
-							распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.</li>
-					</ul>
-					<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
-						Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
-						начинаются от 4499 рублей</b>
+					<img src="images/cards/vacuum-cleaner.png" width="228" height="163"
+						alt="Робот-пылесос Xiaomi Mi Robot">
+					<div class="visually-hidden">
+						<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
+							управление: при помощи переключателей на корпусе регулируются скорость и температурный
+							режим.
+							Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту –
+							264
+							см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели
+							прорезинена и
+							удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
+							специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
+							специальным шарниром у крепления для защиты от механических повреждений. Возможность
+							вращения
+							провода предотвращает его от запутывания.</p>
+						<h3>Основные функциональные характеристики:</h3>
+						<ul>
+							<li>наличие 2 степеней нагрева;</li>
+							<li>2 скорости работы воздушного потока;</li>
+							<li>возможность вращения насадок;</li>
+							<li>встроенный режим "холодный воздух";</li>
+							<li>наличие съемной защитной решетки.</li>
+							<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
+								распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.
+							</li>
+						</ul>
+						<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
+							Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
+							начинаются от 4499 рублей</b>
+					</div>
 				</a>
 			</div>
 			<div class="viewed-item">
 				<a href="">
-					<img src="" width="228" height="163" alt="Умная колонка Яндекс Станция Мини">
-					<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
-						управление: при помощи переключателей на корпусе регулируются скорость и температурный режим.
-						Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту – 264
-						см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели прорезинена и
-						удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
-						специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
-						специальным шарниром у крепления для защиты от механических повреждений. Возможность вращения
-						провода предотвращает его от запутывания.</p>
-					<h3>Основные функциональные характеристики:</h3>
-					<ul>
-						<li>наличие 2 степеней нагрева;</li>
-						<li>2 скорости работы воздушного потока;</li>
-						<li>возможность вращения насадок;</li>
-						<li>встроенный режим "холодный воздух";</li>
-						<li>наличие съемной защитной решетки.</li>
-						<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
-							распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.</li>
-					</ul>
-					<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
-						Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
-						начинаются от 4499 рублей</b>
+					<img src="images/cards/yandex-station.png" width="228" height="163"
+						alt="Умная колонка Яндекс Станция Мини">
+					<div class="visually-hidden">
+						<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
+							управление: при помощи переключателей на корпусе регулируются скорость и температурный
+							режим.
+							Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту –
+							264
+							см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели
+							прорезинена и
+							удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
+							специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
+							специальным шарниром у крепления для защиты от механических повреждений. Возможность
+							вращения
+							провода предотвращает его от запутывания.</p>
+						<h3>Основные функциональные характеристики:</h3>
+						<ul>
+							<li>наличие 2 степеней нагрева;</li>
+							<li>2 скорости работы воздушного потока;</li>
+							<li>возможность вращения насадок;</li>
+							<li>встроенный режим "холодный воздух";</li>
+							<li>наличие съемной защитной решетки.</li>
+							<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
+								распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.
+							</li>
+						</ul>
+						<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
+							Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
+							начинаются от 4499 рублей</b>
+					</div>
 				</a>
 			</div>
 			<div class="viewed-item">
 				<a href="">
-					<img src="" width="228" height="163"
+					<img src="images/cards/laptop.png" width="228" height="163"
 						alt="Ультрабук Huawei MateBook D 14 NbD-WDI9 Mystic Silver (53013ERK)">
-					<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
-						управление: при помощи переключателей на корпусе регулируются скорость и температурный режим.
-						Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту – 264
-						см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели прорезинена и
-						удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
-						специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
-						специальным шарниром у крепления для защиты от механических повреждений. Возможность вращения
-						провода предотвращает его от запутывания.</p>
-					<h3>Основные функциональные характеристики:</h3>
-					<ul>
-						<li>наличие 2 степеней нагрева;</li>
-						<li>2 скорости работы воздушного потока;</li>
-						<li>возможность вращения насадок;</li>
-						<li>встроенный режим "холодный воздух";</li>
-						<li>наличие съемной защитной решетки.</li>
-						<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
-							распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.</li>
-					</ul>
-					<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
-						Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
-						начинаются от 4499 рублей</b>
+					<div class="visually-hidden">
+						<p>Корпус выполнен из пластика, а покрытие насадок – из керамики. Имеет простое механическое
+							управление: при помощи переключателей на корпусе регулируются скорость и температурный
+							режим.
+							Устройство удобное в хранении и использовании. Размеры в ширину составляют 56 см, в высоту –
+							264
+							см, в глубину – 62 см. Вес равен 360 г. Для удобства эксплуатации рукоятка модели
+							прорезинена и
+							удобно располагается в руке. Имеется специальная подвесная петля для расположения прибора на
+							специальном крючке. Щетка имеет диаметр 40 мм и 50 мм. Шнур питания длиной 1,8 м оснащен
+							специальным шарниром у крепления для защиты от механических повреждений. Возможность
+							вращения
+							провода предотвращает его от запутывания.</p>
+						<h3>Основные функциональные характеристики:</h3>
+						<ul>
+							<li>наличие 2 степеней нагрева;</li>
+							<li>2 скорости работы воздушного потока;</li>
+							<li>возможность вращения насадок;</li>
+							<li>встроенный режим "холодный воздух";</li>
+							<li>наличие съемной защитной решетки.</li>
+							<li>Функция ионизации осуществляется благодаря турмалиновому покрытию, которое равномерно
+								распределяет горячий воздух и делает сушку волос эффективной и максимально безопасной.
+							</li>
+						</ul>
+						<b>В нашем маркетплейсе вы можете купить "фен-щетка Rowenta Brush Activ Keratin&Shine CF9522F0
+							Black/Pink" в Москве. Кэшбэк до 495 бонусных рублей. Товар в наличии у 7 продавцов. Цены
+							начинаются от 4499 рублей</b>
+					</div>
 				</a>
 			</div>
 		</section>
@@ -883,23 +978,23 @@
 
 		<div class="page-footer-item">
 			<a href="index.html">
-				<img src="" width="187" height="71" alt="Логотип tovaradar">
+				<img src="images/header/logo.png" width="187" height="71" alt="Логотип tovaradar">
 			</a>
 			<p>© 2022 «Texnostore»</p>
 			<ul>
 				<li>
 					<a href="#">
-						<img src="" width="31" height="31" alt="Instagram">
+						<img src="images/social-media/instagram.svg" width="31" height="31" alt="Instagram">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="" width="31" height="31" alt="Viber">
+						<img src="images/social-media/viber.svg" width="31" height="31" alt="Viber">
 					</a>
 				</li>
 				<li>
 					<a href="#">
-						<img src="" width="31" height="31" alt="Telegram">
+						<img src="images/social-media/telegram.svg" width="31" height="31" alt="Telegram">
 					</a>
 				</li>
 			</ul>
